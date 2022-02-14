@@ -21,7 +21,8 @@ pipeline {
                 chmod +x vault.yml
                 ls -ltr
                 ansible-playbook vault.yml
-                #ansible-vault decrypt key.json --vault-password-file pass --output key2.json              
+                #ansible-vault decrypt key.json --vault-password-file pass --output key2.json   
+                ls -ltr
                 '''
             }
           }
