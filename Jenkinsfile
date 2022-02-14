@@ -11,7 +11,6 @@ pipeline {
                    #!/bin/bash
                    git clone https://github.com/sravan-github/vault-test.git
                    ls -ltr
-                   whoami
                    '''
             }
         }
