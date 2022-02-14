@@ -2,7 +2,7 @@ pipeline {
     //agent any
     
     agent {
-        docker { image 'sravangcpdocker/terraform:2' }
+        docker { image 'sravangcpdocker/terraform:3' }
     }
     stages {
         stage('git-clone') {
