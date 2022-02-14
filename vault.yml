@@ -6,7 +6,4 @@
   tasks:
     - name: vault-decrypt
       command: "ansible-vault decrypt key.json --vault-password-file pass --output key2.json"
-      register: dfboot
       ignore_errors: True
-
-    - debug: var=dfboot.stdout
