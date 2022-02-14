@@ -5,5 +5,5 @@
   gather_facts: no
   tasks:
     - name: vault-decrypt
-      command: 'ansible-vault decrypt key.json --vault-password-file pass'
+      command: 'ansible-vault decrypt key.json --vault-password-file pass --output key2.json'
       ignore_errors: True
