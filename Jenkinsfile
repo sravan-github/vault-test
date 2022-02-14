@@ -20,6 +20,7 @@ pipeline {
                 ls -ltr
                 cd vault-test
                 ls -ltr
+                cat key.json
                 '''
             }
           }
