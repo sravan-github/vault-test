@@ -2,7 +2,7 @@ pipeline {
     //agent any
     
     agent {
-        docker { image 'sravangcpdocker/terraform:3' }
+        docker { image 'sravangcpdocker/terraform:7' }
     }
     stages {
         stage('git-clone') {
@@ -11,6 +11,7 @@ pipeline {
                    #!/bin/bash
                    git clone https://github.com/sravan-github/vault-test.git
                    ls -ltr
+                   pwd
                    '''
             }
         }
