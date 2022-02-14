@@ -17,7 +17,8 @@ pipeline {
                 sh '''
                 ansible-playbook vault.yml
                 #ansible-vault decrypt key.json --vault-password-file pass --output key2.json
-                cat key.json
+                ls -l
+                cat key
                 '''
             }
           }
