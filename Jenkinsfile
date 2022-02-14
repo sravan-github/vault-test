@@ -9,7 +9,6 @@ pipeline {
             steps {
                 sh '''
                    #!/bin/bash
-                   su ununtu
                    git clone https://github.com/sravan-github/vault-test.git
                    ls -ltr
                    pwd
