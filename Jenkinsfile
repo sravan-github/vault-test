@@ -2,7 +2,7 @@ pipeline {
     //agent any
     
     agent {
-        docker { image 'sravangcpdocker/terraform:7' }
+        docker { image 'sravangcpdocker/toolkit:9' }
     }
     stages {
         stage('git-clone') {
@@ -18,7 +18,7 @@ pipeline {
         stage('vault') {
             steps {
                 sh '''
-                ansible-playbook -b vault.yml
+                ansible-playbook vault.yml
                 #ansible-vault decrypt key.json --vault-password-file pass --output key2.json              
                 '''
             }
