@@ -2,7 +2,7 @@ pipeline {
     //agent any
     
     agent {
-        docker { image 'sravangcpdocker/toolkit:10' }
+        docker { image 'sravangcpdocker/toolkit:11' }
     }
     stages {
         stage('git-clone') {
