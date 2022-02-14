@@ -19,6 +19,7 @@ pipeline {
             steps {
                 sh '''
                 chmod +x vault.yml
+                chmod +x key.json
                 ls -ltr
                 ansible-playbook vault.yml
                 #ansible-vault decrypt key.json --vault-password-file pass --output key2.json   
